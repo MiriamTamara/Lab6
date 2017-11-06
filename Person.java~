@@ -11,6 +11,8 @@ if (name==null){
 	
 } else if (name.equals("")){
 valid =false;
+} else if (name.length()<6){
+valid =false;
 }
 if (email==null){
 	valid = false;
@@ -23,7 +25,11 @@ if (phone==null){
 	
 } else if (phone.equals("")){
 valid =false;
-}
+} else if (phone.length()<9){
+	valid=false;
+} else if phone.length()>10){
+	valid=false;
+	}
 
  return valid;
  

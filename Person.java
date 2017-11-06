@@ -25,6 +25,12 @@ if (phone==null){
 	
 } else if (phone.equals("")){
 valid =false;
+} else if (phone.length()<9){
+	valid=false;
+} else if (phone.length()>10){
+	valid=false;
+} else if (!((phone.charAt(0)).equals('0'))){
+valid=false;
 }
 
  return valid;
