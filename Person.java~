@@ -5,7 +5,26 @@ String email;
 String phone;
 public boolean isValid() {
 boolean valid = true;
-// TODO: Add validity checks
+
+if (name==null){
+	valid = false;
+	
+} else if (name.equals("")){
+valid =false;
+}
+if (email==null){
+	valid = false;
+	
+} else if (email.equals("")){
+valid =false;
+}
+if (phone==null){
+	valid = false;
+	
+} else if (phone.equals("")){
+valid =false;
+}
+
  return valid;
  
 }

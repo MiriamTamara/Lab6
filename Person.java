@@ -11,6 +11,8 @@ if (name==null){
 	
 } else if (name.equals("")){
 valid =false;
+} else if (name.length()<6){
+valid =false;
 }
 if (email==null){
 	valid = false;
