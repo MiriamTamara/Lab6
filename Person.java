@@ -29,7 +29,7 @@ valid =false;
 	valid=false;
 } else if (phone.length()>10){
 	valid=false;
-} else if (!((phone.charAt(0)).equals('0'))){
+} else if (!((phone.charAt(0))=='0')){
 valid=false;
 }
 
