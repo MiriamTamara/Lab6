@@ -3,7 +3,7 @@ import java.util.regex.Matcher;
 
 public class Person {
 
-String name;
+String name; 
 String email;
 String phone;
 public boolean isValid() {
