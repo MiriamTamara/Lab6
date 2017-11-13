@@ -1,3 +1,6 @@
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
 public class Person {
 
 String name;
@@ -19,6 +22,12 @@ if (email==null){
 	
 } else if (email.equals("")){
 valid =false;
+} else {
+Pattern p=Pattern.compile("(\\w)+(\\.)?(\\w)+@(\\w)+\\.(com|(ac\\.)?(\\.co\\.(uk)|(il)|(no)|(dk)))");
+Matcher m =p.matcher(email);
+if (!m.matches()){
+valid=false;
+}
 }
 if (phone==null){
 	valid = false;
